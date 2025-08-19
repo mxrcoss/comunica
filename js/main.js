@@ -6,7 +6,7 @@ const list = navlist.querySelectorAll("a")
 menuBtn.addEventListener("click", () => {
     navlist.classList.toggle("active");
     if (navlist.classList.contains("active")) {
-        menuBtn.innerHTML = "X";
+        menuBtn.innerHTML = "X Cerrar";
         menuBtn.setAttribute("aria-expanded","true")
     }else{
         menuBtn.innerHTML = "&#9776;";
