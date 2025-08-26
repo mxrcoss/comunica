@@ -5,13 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/style01.css">
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Handlee&display=swap" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap" rel="stylesheet">
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 </head>
 <body>
 
@@ -22,19 +27,20 @@
                 <img class="logo" src="./img/logo5.png" alt="Logo">
                 <button class="menu-btn" id="menuBtn">&#9776; menu</button>
                 <ul class="nav-list" id="navlist">
-                    <li><a href="#inicio">Inicio</a></li>
-                    <li><a href="#">Quiénes somos</a></li>
-                    <li><a href="#">Servicios</a></li>
-                    <li><a href="#">Qué hacemos</a></li>
-                    <li><a href="#">Contacto</a></li>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="nosotros.html">Quiénes somos</a></li>
+                    <li><a href="servicios.html">Servicios</a></li>
+                    <li><a href="que-hacemos.html">Qué hacemos</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
                 </ul>
             </div>
         
         </nav>
         <div class="titulo-inicio">
             <p>Inicio</p>
-        </div> 
-        <div class="header-content container">
+        </div>
+    </header>
+        <div class="header-content">
             <div class="imagenes-inicio">
                 <img class="logo01" src="./img/fonema.png" alt="Logo">
 
@@ -43,40 +49,237 @@
                 <img class="logo01" src="./img/fonema2.png" alt="Logo">
             </div>
             <div class="miss">
-                <img class="logo2" src="./img/miss.png" alt="Logo" width="1500px">
+                <img class="logomiss" src="./img/miss.png" alt="Logo">
             </div>
         </div>
-        
-    </header>
 
-    <section class="information container">
-        <div class="information-content">
-            <div class="information-1">
-                <img src="" alt="">
-                <h3>dxdxdx</h3>
-                <p>sdsdsdsd</p>
-            </div>
 
-            <div class="information-1">
-                <img src="" alt="">
-                <h3>dxdxdx</h3>
-                <p>sdsdsdsd</p>
+    <div class="container marketing">  
+        <div class="row pt-5">
+            <h2 class="pb-2 border-bottom">Para empezar</h2>
+            <div class="col-lg-4"> 
+                
+                <img src="./img/Captura de pantalla 2025-08-15 204005.png" alt="Sobre Nosotros" width="200" height="200" class="rounded-circle mb-3">
+                    <h2 class="fw-normal">Sobre Nosotros</h2> 
+                    <p>En Fonema brindamos las herramientas necesarias para
+                        potenciar las habilidades comunicativas y cognitivas que
+                        contribuyen al desarrollo integral del niño; aportando
+                        herramientas para la formación de seres autónomos y
+                        líderes exitosos.</p> 
+                    <p><a class="btn btn-info border border-dark border-4" href="#">VER MÁS »</a></p> 
             </div>
+                        <!-- /.col-lg-4 --> 
+            <div class="col-lg-4"> 
+                <img src="./img/terapia-del-habla-en-centro-psicologico.webp" alt="Sobre Nosotros" width="200" height="200" class="rounded-circle mb-3">
+                
+                <h2 class="fw-normal">Qué hacemos</h2> 
+                <p>Apoyamos a los niños  para que
+                    desarrollen sus habilidades
+                    comunicativas y cognitivas logrando
+                    alcanzar su máximo potencial.</p> 
+                <p><a class="btn btn-info border border-dark border-4" href="#">VER MÁS »</a></p> 
+            </div>
+            <!-- /.col-lg-4 --> 
+            <div class="col-lg-4"> 
+                <img src="./img/terapia-de-estimulacion.jpg" alt="Sobre Nosotros" width="200" height="200" class="rounded-circle mb-3">
+                
+                <h2 class="fw-normal">Nuestros Servicios</h2> 
+                <p>TERAPIA DE LENGUAJE</p>
 
-            <div class="information-1">
-                <img src="" alt="">
-                <h3>dxdxdx</h3>
-                <p>sdsdsdsd</p>
+                <p> TERAPIA OCUPACIONAL Y
+                    SENSORIAL</p> 
+
+                <p>TERAPIA DE ATENCIÓN Y
+                    CONCENTRACIÓN</p>
+
+                    <p>TERAPIA DE APRENDIZAJE</p>
+                <p><a class="btn btn-info border border-dark border-4" href="#">VER MÁS »</a></p> 
             </div>
+            <!-- /.col-lg-4 --> 
         </div>
-    </section>
-    <section class="especialidades container">
+</div> 
+<!-- inicio que ofrecemos -->
 
-    </section>
-    <section class="intervenciones container">
+<div class="container px-4 py-5" id="custom-cards"> 
+    <h2 class="pb-2 border-bottom">Que ofrecemos</h2> 
+    <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5"> 
+        <div class="col"> 
+            <div class="card card-cover h-100 overflow-hidden text-bg-black rounded-4 shadow-lg" style="background-image: url('./img/descarga\ \(11\).jpg');"> 
 
-    </section>
-    
+                <div class="d-flex flex-column h-100 p-3 pb-3 text-shadow-1"> 
+
+                    <img src="./img/terapia-de-estimulacion.jpg" alt="Sobre Nosotros">
+
+                    <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Consulta</h3> 
+                    <p>Permite conocer la
+                        historia clínica de tu
+                        hijo.</p> 
+                    <p><a class="btn btn-success border border-dark border-4" href="#">VER MÁS »</a></p>  
+                </div> 
+            </div> 
+        </div> 
+        <div class="col"> 
+            <div class="card card-cover h-100 overflow-hidden text-bg-white rounded-4 shadow-lg" style="background-image: url('./img/descarga\ \(11\).jpg');"> 
+                <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1"> 
+                    <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Evaluación</h3> 
+                    <p>Evaluación a nivel de
+                        lenguaje, habilidades
+                        cognitivas, psicomotora.</p> 
+                    <p><a class="btn btn-success border border-dark border-4" href="#">VER MÁS »</a></p> 
+                </div> 
+            </div> 
+        </div> 
+        <div class="col"> 
+            <div class="card card-cover h-100 overflow-hidden text-bg-warning rounded-4 shadow-lg" style="background-image: url('./img/descarga\ \(11\).jpg');"> 
+                <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1"> 
+                    <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Sesiones de terapia</h3> 
+                    <p>Sesiones terapéuticas
+                        según él o la especialista
+                        refiera.</p> 
+                    <p><a class="btn btn-success border border-dark border-4" href="#">VER MÁS »</a></p> 
+                </div> 
+            </div> 
+        </div> 
+    </div>
+</div>
+<!-- fin que ofrcemos -->
+<div>
+    <h1 class="text-center">Nuestras intervenciones</h1>
+</div>
+
+<!-- xd -->
+<div id="myCarousel" class="carousel slide mb-6 w-75 mx-auto mi-borde-personalizado" data-bs-ride="carousel"> 
+    <div class="carousel-indicators"> 
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2" class="active" aria-current="true"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3" class=""></button> 
+    </div> 
+    <div class="carousel-inner"> 
+        <div class="carousel-item"> 
+            <img src="./img/curso-patologia-desarrollo-lenguaje-trastornos-adquiridos.jpg" class="d-block w-100" alt="Descripción de la imagen">
+            <div class="container"> 
+                <div class="carousel-caption text-start w-50"> 
+                    <h1 class="fw-bold">Evaluación y Diagnostico</h1> 
+                    <p class="fw-bold">En esta etapa realizamos una evaluación integral del niño o niña, considerando su desarrollo emocional, conductual, cognitivo, del lenguaje y/o motor. A través de entrevistas con la familia, observación clínica y herramientas especializadas, identificamos sus fortalezas y necesidades.
+                    Esto nos permite comprender su situación de forma precisa y diseñar un plan de intervención personalizado y efectivo.</p>
+                    <p><a class="btn btn-lg btn-warning border border-dark border-4" href="#">Sign up today</a></p> 
+                </div> 
+            </div> 
+        </div> 
+        <div class="carousel-item active">  
+            <img src="./img/descarga (17).jpg" class="d-block w-100" alt="Descripción de la imagen">
+            <div class="container">
+                <div class="carousel-caption"> 
+                    <h1>Terapia individual y personalizada</h1> 
+                    <p>Cada niño y niña es único, por eso adaptamos nuestras intervenciones a sus necesidades específicas. 
+                        Trabajamos de forma individual para potenciar sus fortalezas, acompañar sus desafíos y promover su bienestar emocional, 
+                        conductual y del desarrollo en un entorno seguro y empático.</p> 
+                    <p><a class="btn btn-lg  btn-warning border border-dark border-4" href="#">Learn more</a></p> 
+                </div> 
+            </div> 
+        </div> 
+        <div class="carousel-item"> 
+            <svg aria-hidden="true" class="bd-placeholder-img " height="100%" preserveAspectRatio="xMidYMid slice" width="100%" xmlns="http://www.w3.org/2000/svg">
+                <rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect>
+            </svg> 
+            <div class="container"> 
+                <div class="carousel-caption text-end"> 
+                    <h1>Asesoria permanente .</h1> 
+                    <p>Some representative placeholder content for the third slide of this carousel.</p>
+                    <p><a class="btn btn-lg  btn-warning border border-dark border-4" href="#">Browse gallery</a></p> 
+                </div> 
+            </div> 
+        </div> 
+</div> 
+<button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev"> 
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span> 
+</button>
+<button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next"> 
+    <span class="carousel-control-next-icon" aria-hidden="true"></span> 
+    <span class="visually-hidden">Next</span> 
+</button> 
+</div>
+<!--fin xd  -->
+    <!-- inicio footer -->
+<div class="b-example-divider"></div> 
+    <div class="container-fluid bg-light"> 
+        <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-0 border-top"> 
+            <div class="col mb-3"> 
+                <a href="/" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none" aria-label="Bootstrap">
+                    <i class="bi bi-facebook"></i>
+                </a>
+                <a href="/" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none" aria-label="Bootstrap">
+                <i class="bi bi-instagram"></i>
+                </a>
+                <p class="text-body-secondary">&copy; 2025</p> 
+            </div> 
+            <div class="col mb-3"></div> 
+            <div class="col mb-3">
+                <h5>Section</h5>
+                <ul class="nav flex-column"> 
+                    <li class="nav-item mb-2">
+                        <a href="#" class="nav-link p-0 text-body-secondary">Home</a>
+                    </li> 
+                    <li class="nav-item mb-2">
+                        <a href="#" class="nav-link p-0 text-body-secondary">Features</a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a href="#" class="nav-link p-0 text-body-secondary">Pricing</a>
+                    </li> 
+                    <li class="nav-item mb-2">
+                        <a href="#" class="nav-link p-0 text-body-secondary">FAQs</a>
+                    </li> 
+                    <li class="nav-item mb-2">
+                        <a href="#" class="nav-link p-0 text-body-secondary">About</a>
+                    </li> 
+                </ul> 
+            </div>
+            <div class="col mb-3"> 
+            <h5>Section</h5>
+            <ul class="nav flex-column"> 
+            <li class="nav-item mb-2">
+            <a href="#" class="nav-link p-0 text-body-secondary">Home</a>
+        </li>
+        <li class="nav-item mb-2">
+            <a href="#" class="nav-link p-0 text-body-secondary">Features</a>
+        </li> 
+        <li class="nav-item mb-2">
+            <a href="#" class="nav-link p-0 text-body-secondary">Pricing</a>
+        </li>
+        <li class="nav-item mb-2">
+            <a href="#" class="nav-link p-0 text-body-secondary">FAQs</a>
+        </li> 
+        <li class="nav-item mb-2">
+            <a href="#" class="nav-link p-0 text-body-secondary">About</a>
+        </li> 
+    </ul> 
+</div> 
+<div class="col mb-3"> 
+    <h5>Section</h5> 
+    <ul class="nav flex-column"> 
+        <li class="nav-item mb-2">
+            <a href="#" class="nav-link p-0 text-body-secondary">Home</a>
+        </li>
+        <li class="nav-item mb-2">
+            <a href="#" class="nav-link p-0 text-body-secondary">Features</a>
+        </li> 
+        <li class="nav-item mb-2">
+                    <a href="#" class="nav-link p-0 text-body-secondary">Pricing</a>
+                    </li>
+                    <li class="nav-item mb-2">
+                    <a href="#" class="nav-link p-0 text-body-secondary">FAQs</a>
+                    </li> 
+                    <li class="nav-item mb-2">
+                        <a href="#" class="nav-link p-0 text-body-secondary">About</a>
+                    </li> 
+                </ul> 
+            </div> 
+        </footer> 
+    </div>
+        <!-- fin footer -->
+
     <script src="./js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -8,7 +8,7 @@
     font-style: normal;
 }
 body {
-    background-image:url('../img/fondo01.jpg');
+    /* background-image:url('../img/fondo01.jpg'); */
     background-position:center;
     background-size:contain;
     background-attachment:fixed;  
@@ -33,10 +33,7 @@ header{
     height: 82px;
     
 }
-.logo2{
-    margin:50% auto;
-    width: 500px;
-}
+
 
 .nav-list {
     display: flex;
