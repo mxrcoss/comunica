@@ -94,6 +94,7 @@ header {
   flex-direction: column;
   min-width:350px;
   border-radius: 5px;
+  z-index: 9999; 
 }
 
 .submenu li a {
@@ -103,11 +104,19 @@ header {
 
 /* Hover en escritorio SOLAMENTE */
 @media (min-width: 769px) {
-    .menu li a:hover {
-      background: rgba(255, 255, 255, 0.2);
+  /* Hover del menú principal */
+    .menu > li > a:hover {
+      background: rgb(196, 146, 110);
       border-radius: 5px;
     }
 
+    /* Hover del submenú */
+  .submenu li a:hover {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+  }
+
+  /* Mostrar submenú en hover */
     .submenu-parent:hover .submenu {
       display: flex;
     }
