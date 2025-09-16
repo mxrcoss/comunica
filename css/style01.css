@@ -1,26 +1,47 @@
 
-.titulo-inicio{
-    padding: 0;
-    width: 100%;
-    height: 100px;
-    text-align: center;
-    align-content: center;
-    font-size: 25px;
-    background-color: rgb(240, 239, 239);
-}
-img{
-    max-width: 100%;
-      /* height: auto; */
-    display: block;
-}         
-.header-content{
+
+        
+/* .header-content{
     display: flex;
     max-height: 900px;
     justify-content: space-around;
     justify-content:space-evenly;
-    /* background-color: black; */
-    /* background-image:url('../img/FondoWhatsApp.jpg'); */
+} */
+
+.bg-fonema {
+  position: relative;
+  background-image: url("../img/fondoo.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 550px;
+  color: white;
+  z-index: 1;
 }
+/* overlay!! opacidad detras del texto*/
+.bg-fonema .col-lg-6 {
+  background-color: rgba(0, 0, 0, 0.301); /* negro con opacidad */
+  padding: 5px;
+  border-radius: 20px; /* opcional, para bordes redondeados */
+  
+}
+/* Tipografía */
+.bg-fonema h1 {
+  font-size: 3rem;   /* 48px */
+  font-weight: 700;
+}
+
+.bg-fonema p.lead {
+  font-size: 1.5rem; /* 24px */
+  line-height: 1.6;
+}
+.bg-fonema h1 {
+  font-family: "Caveat Brush", cursive;
+  font-size: 4.5rem;
+}
+
+
+
 .imagenes-inicio{
     /* background-color:blueviolet; */
     /* border:6px solid rgba(38, 8, 126, 0.3); */
@@ -69,7 +90,114 @@ img{
     max-width: 500px; /* opcional para limitar el ancho */
   }
 }
+            .marketing .col-lg-4 img {
+              transition: transform 0.5s ease; 
+            }
+          /* hover solo en pantallas grandes */
+          /* -------- */
+              @media screen and (min-width: 751px) {
 
+                  /* Hover en imágenes de sección marketing */
+                  .marketing .col-lg-4:hover img {
+                      transform: scale(1.1); /* Zoom suave */
+                  }
+                  }
+
+.custom-cards-inicio{
+  background-color: rgba(240, 239, 239, 0.603);
+  
+}
+
+              .custom-cards-inicio .card img {
+                transition: transform 0.5s ease;
+              }
+
+                /* hover solo en pantallas grandes */
+          /* -------- */
+              @media screen and (min-width: 751px) {
+
+                  /* Hover en imágenes de cards */
+                  .custom-cards-inicio .card:hover img {
+                      transform: scale(1.1); /* Zoom suave */
+                  }
+                  }
+
+.card-cover::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(255, 255, 255, 0.589); /* blanco con 40% de opacidad */
+  z-index: 1;
+}
+
+.card-cover > * {
+  position: relative;
+  z-index: 2;
+  color: #222; /* texto oscuro para contraste */
+}
+.col img {
+    border-radius: 20px;
+    /* border: 4px solid rgba(38, 8, 126, 0.3); */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    width: 100%;
+    height: auto;
+    max-height: 300px;
+    object-fit: cover; /* para que la imagen no se deforme */
+}
+
+
+.parrafo-para-empezar {
+  text-align: justify;
+  padding: 15px;
+  border-radius: 10px;
+  /* background-color: rgba(191, 236, 218, 0.705); */
+  box-shadow: 0 0 20px rgba(14, 191, 204, 0.4);
+}
+
+      /*inicio nuestros servicios DENTRO DE PARA EMPEZAR */
+.parrafo-nuestrosservicios {
+  
+  text-align: justify;
+  padding: 15px;
+  border-radius: 10px;
+  /* background-color: rgba(240, 239, 239, 0.705); */
+  box-shadow: 0 0 20px rgba(14, 191, 204, 0.4);
+}
+.parrafo-nuestrosservicios ul {
+  list-style: none; /* quita las viñetas por defecto */
+  padding-left: 0;
+}
+
+.parrafo-nuestrosservicios li {
+  margin-bottom: 15px;
+  padding-left: 28px;
+  position: relative;
+}
+
+.parrafo-nuestrosservicios li::before {
+  content: "🧩"; /* también puedes usar un emoji o un ícono con font-awesome */
+  position: absolute;
+  left: 0;
+  color: #d8f404;
+  font-weight: bold;
+}
+.parrafo-nuestrosservicios li:nth-child(1)::before {
+  content: "🗣️"; /* Terapia de lenguaje */
+}
+
+.parrafo-nuestrosservicios li:nth-child(2)::before {
+  content: "🖐️"; /* Terapia ocupacional */
+}
+
+.parrafo-nuestrosservicios li:nth-child(3)::before {
+  content: "🎯"; /* Atención y concentración */
+}
+
+.parrafo-nuestrosservicios li:nth-child(4)::before {
+  content: "📘"; /* Aprendizaje */
+}
+
+      /* fin nuestros servicios */
 
 .carousel-item {
     height: 80vh; /* 75% de la altura de la ventana */
@@ -93,10 +221,16 @@ img{
     font-style: normal;
     font-size: 19px;
 }
-.mi-borde-personalizado {
-  border: 7px dashed #28a745;  /* borde verde, punteado */
+/* overlay!! opacidad detras del texto*/
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.301); /* Fondo blanco con opacidad */
+    padding: 10px;
+    border-radius: 10px;
+}
+/* .mi-borde-personalizado {
+  border: 7px dashed #28a745;  borde verde punteado
   border-radius: 15px;
   padding: 1px;
   box-shadow: 0 0 20px rgba(40,167,69,0.4);
-}
+} */
 

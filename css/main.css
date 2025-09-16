@@ -8,100 +8,197 @@
     font-style: normal;
 }
 body {
-    /* background-image:url('../img/fondo01.jpg'); */
-    background-position:center;
-    background-size:contain;
-    background-attachment:fixed;  
+background-color: #ffffff; 
 }
-header{
-    background-color:white;
-}
-.nav-container{
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        max-width: 1200px;
-        height: 94px;
-        margin: 0 auto;
-        background-color:white;
-    }
 
+/* img{
+    max-width: 100%;
+    
+    display: block;
+}  */
+
+    .titulo-inicio{
+    padding: 0;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    align-content: center;
+    font-size: 25px;
+    background-color: rgb(240, 239, 239);
+}
+/* 
 .logo {
-    /* width: 25%;
-    height: 70%; */
-    width: 248px;
-    height: 82px;
+  max-height: 110px;
+} */
+
+
+/* Estilos para la barra de navegación */
+
+
+header {
+  background-color: #f7ffff;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+/* Logo */
+.logo {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  color: white;
+  font-size: 18px;
+}
+
+.logo img {
+  width: 300px;
+  height: 100px;
+  margin-right: 10px;
+}
+
+/* Menú (desktop) */
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  position: relative;
+}
+
+.menu li {
+  position: relative;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-weight: 500;
+  padding: 8px 12px;
+  display: block;
+  font-size: 18px;
+  
+}
+/* Submenús (desktop) */
+.submenu {
+  list-style: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #3f4446;
+  display: none;
+  flex-direction: column;
+  min-width:350px;
+  border-radius: 5px;
+}
+
+.submenu li a {
+  padding: 10px;
+  color: white;
+}
+
+/* Hover en escritorio SOLAMENTE */
+@media (min-width: 769px) {
+    .menu li a:hover {
+      background: rgba(255, 255, 255, 0.2);
+      border-radius: 5px;
+    }
+
+    .submenu-parent:hover .submenu {
+      display: flex;
+    }
+}
+
+/* Botón hamburguesa */
+.menu-toggle {
+  display: none;
+  font-size: 34px;
+  color: rgb(54, 46, 46);
+  cursor: pointer;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .menu {
+      flex-direction: column;
+      background-color:#b9bfc4;
+      position: fixed;
+      top: 100px;        /* ✅ empieza justo debajo del navbar */
+      right: -100%;     /* fuera de la pantalla */
+      height: calc(100% - 60px); /* ✅ ocupa el resto de la pantalla */
+      width: 100%;
+      transition: right 0.2s ease-in-out;
+      z-index: 1000;
+    }
+
+    .menu.active {
+      right: 0; /* ✅ se despliega desde la derecha */
+    }
+
+    .menu li {
+      text-align: center;
+      padding: 15px 0;
+    }
+
+    @media (max-width: 768px) {
+    /* Submenú en móvil (colapsable) */
+    .submenu {
+      display: none;
+      flex-direction: column;
+      position: static; /* ✅ ya no flotante */
+      background: #3f4446;
+    }
+
+    .submenu.active {
+      display: flex; /* ✅ aparece al dar click */
+    }
+  }
+    .menu-toggle {
+      display: block;
+  }
+}
+
+.navbar-navVssssssss a {
+    color: #000000; 
+}
+/* hover solo en pantallas grandes */
+/* -------- */
+    @media screen and (min-width: 751px) {
+    /* Hover en links del menú */
+        .navbar-nav a:hover {
+            opacity: 0.8;
+            transform: translateY(-2px);
+            /* color: chocolate; */
+            background-color: rgb(255, 255, 255);
+            color: rgb(10, 9, 9);
+            border-radius: 10px;
+            padding: 5px;        
+        }
+}
+
     
+
+.footer-custom {
+  background-color: #00c4cc; /* tu color turquesa */
+  color: white; /* texto en blanco */
+
 }
 
-
-.nav-list {
-    display: flex;
-    gap: 1.5rem;
-    list-style: none;
-    transition: all 0.3s ease;
+.footer-custom a {
+  color: #f0f0f0; /* enlaces claros */
+  text-decoration: none;
+  font-size: 1.2rem;
 }
 
-
-.nav-list a {
-    color: #1c1c1c;
-    text-decoration: none;
-    font-weight: 500;
-    transition: all 0.2s;
-    
+.footer-custom a:hover {
+  color: #2f3ce9; /* enlaces más brillantes al pasar el mouse */
 }
-.nav-list a:hover{
-    opacity: 0.8;
-    transform: translateY(-2px);
-    color: chocolate;
-}
-.menu-btn {
-    display: none;
-    background: none;
-    border: none;
-    color: #050404;
-    font-size: 1.5rem;
-    cursor: pointer;
-}
-
-@media screen and (max-width: 750px) {
-    
-    .menu-btn {
-        display: block;
-        /* border: 0;
-        font-size: 1.25rem;
-        background-color: transparent;
-        cursor: pointer; */
-    }
-    .nav-list{
-        position: fixed;
-        top: 100px;
-        left: 0;
-        width: 100%;
-        background-color: #00c4cc;
-        flex-direction: column;
-        align-items: center;
-        padding: 1rem 0;
-        clip-path: circle(0px at 90% -10%);
-        pointer-events: none;
-    }
-    .nav-list.active{
-        clip-path: circle(1000px at 90% -10%);
-        pointer-events: all;
-    }
-    .nav-list li{
-        opacity: 0;
-        transform: translateY(20px);
-        transition: all 0.3s ease;
-
-    }
-
-    .nav-list.active li{
-        opacity: 1;
-        transform: translateY(0);
-    }
-    .nav-list li:nth-child(1){transition-delay: 0.1s;}
-    .nav-list li:nth-child(2){transition-delay: 0.2s;}
-    .nav-list li:nth-child(3){transition-delay: 0.3s;}
-    .nav-list li:nth-child(4){transition-delay: 0.4s;}
+.footer-custom h5 {
+  color: #f0f0f0; /* enlaces claros */
+  text-decoration: none;
+  font-size: 1.7rem;
 }

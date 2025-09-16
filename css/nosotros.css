@@ -1,0 +1,55 @@
+.parrafo-nosotros {
+  font-size: 17px;
+  line-height: 1.8;
+  text-align: justify;
+  padding: 15px;
+  border-radius: 10px;
+}
+.parrafo-nosotros2 {
+  font-size: 17px;
+  line-height: 1.8;
+  text-align: justify;
+  padding: 15px;
+  border-radius: 10px;
+  /* border: 3.5px dashed #5f911e; */
+  box-shadow: 0 0 20px rgba(14, 191, 204, 0.4);
+}
+.marketing-nuestrametodologia{
+  background-color: rgba(240, 239, 239, 0.603);
+}
+.parrafo-nuestrosvalores {
+  font-size: 20px;
+  line-height: 1.8;
+  
+  text-align: justify;
+  padding: 15px;
+  border-radius: 10px;
+  border: 3.5px dashed #d8f404;
+  box-shadow: 0 0 20px rgba(149, 3, 3, 0.4);
+}
+.parrafo-nuestrosvalores ul {
+  list-style: none; /* quita las viñetas por defecto */
+  padding-left: 0;
+}
+
+.parrafo-nuestrosvalores li {
+  margin-bottom: 40px;
+  padding-left: 28px;
+  position: relative;
+}
+
+.parrafo-nuestrosvalores li::before {
+  content: "✔"; /* también puedes usar un emoji o un ícono con font-awesome */
+  position: absolute;
+  left: 0;
+  color: #d8f404;
+  font-weight: bold;
+}
+.container.marketing h2{
+  font-family: "Caveat Brush", cursive;
+  font-weight: 400; /* controla el grosor de la letra */
+  font-style: normal;
+  font-size: 45px;
+  color: rgb(49, 82, 128);
+}
+

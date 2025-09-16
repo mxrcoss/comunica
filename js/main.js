@@ -1,23 +1,18 @@
+// Toggle menú móvil
+    const toggle = document.getElementById("menu-toggle");
+    const menu = document.getElementById("menu");
 
-const menuBtn = document.getElementById("menuBtn");
-const navlist = document.getElementById("navlist");
-const list = navlist.querySelectorAll("a")
+    toggle.addEventListener("click", () => {
+      menu.classList.toggle("active");
+    });
 
-menuBtn.addEventListener("click", () => {
-    navlist.classList.toggle("active");
-    if (navlist.classList.contains("active")) {
-        menuBtn.innerHTML = "X Cerrar";
-        menuBtn.setAttribute("aria-expanded","true")
-    }else{
-        menuBtn.innerHTML = "&#9776;";
-        menuBtn.setAttribute("aria-expanded","false")
-    }
-});
-
-list.forEach(lists => {
-    lists.addEventListener("click", () =>{
-        navlist.classList.remove("active");
-        menuBtn.innerHTML = "&#9776;";
-        menuBtn.setAttribute("aria-expanded", "false");
-    })
-});
+    // Toggle submenú en móvil
+    const submenuParents = document.querySelectorAll(".submenu-parent > a");
+    submenuParents.forEach(parent => {
+      parent.addEventListener("click", (e) => {
+        if (window.innerWidth <= 768) { // solo en móvil
+          e.preventDefault(); // evitar que navegue
+          parent.nextElementSibling.classList.toggle("active");
+        }
+      });
+    });
