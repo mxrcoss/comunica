@@ -9,6 +9,10 @@
 }
 body {
 background-color: #ffffff; 
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
 }
 
 /* img{
@@ -26,10 +30,7 @@ background-color: #ffffff;
     font-size: 25px;
     background-color: rgb(240, 239, 239);
 }
-/* 
-.logo {
-  max-height: 110px;
-} */
+
 
 
 /* Estilos para la barra de navegación */
@@ -37,6 +38,9 @@ background-color: #ffffff;
 
 header {
   background-color: #f7ffff;
+}
+main {
+  flex: 1; /* ocupa el espacio sobrante */
 }
 
 /* Navbar */
@@ -171,43 +175,44 @@ header {
   }
 }
 
-.navbar-navVssssssss a {
-    color: #000000; 
-}
-/* hover solo en pantallas grandes */
-/* -------- */
-    @media screen and (min-width: 751px) {
-    /* Hover en links del menú */
-        .navbar-nav a:hover {
-            opacity: 0.8;
-            transform: translateY(-2px);
-            /* color: chocolate; */
-            background-color: rgb(255, 255, 255);
-            color: rgb(10, 9, 9);
-            border-radius: 10px;
-            padding: 5px;        
-        }
-}
 
-    
+
+
 
 .footer-custom {
-  background-color: #00c4cc; /* tu color turquesa */
+  background-color: #898A8E; /* fondo gris oscuro */
   color: white; /* texto en blanco */
-
+  
+  margin-top: auto;
+ 
 }
 
 .footer-custom a {
   color: #f0f0f0; /* enlaces claros */
   text-decoration: none;
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 .footer-custom a:hover {
   color: #2f3ce9; /* enlaces más brillantes al pasar el mouse */
 }
 .footer-custom h5 {
-  color: #f0f0f0; /* enlaces claros */
+  color: #000000;
   text-decoration: none;
-  font-size: 1.7rem;
+  font-size: 1.2rem;
+  border-bottom: #1b1c30 solid 2px;
+}
+.feature {
+   display: flex;             /* coloca imagen y texto en fila */
+  align-items: flex-start;   /* alinea arriba */
+}
+.feature i {
+  font-size: 1.75rem;
+  padding-top: 0.25rem;
+  margin-right: 1rem;
+  color: #212529;
+}
+.nav li a {
+  color: #212529;
+  
 }

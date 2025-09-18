@@ -1,22 +1,16 @@
 
 
-        
-/* .header-content{
-    display: flex;
-    max-height: 900px;
-    justify-content: space-around;
-    justify-content:space-evenly;
-} */
-
 .bg-fonema {
   position: relative;
   background-image: url("../img/fondoo.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  min-height: 550px;
+  min-height: 650px;
   color: white;
   z-index: 1;
+  /* border-bottom-left-radius: 700px; */
+  clip-path: ellipse(100% 90% at 50% 0%);
 }
 /* overlay!! opacidad detras del texto*/
 .bg-fonema .col-lg-6 {

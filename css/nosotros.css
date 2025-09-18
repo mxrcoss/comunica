@@ -18,6 +18,10 @@
   background-color: rgba(240, 239, 239, 0.603);
 }
 .parrafo-nuestrosvalores {
+  display: flex;             /* coloca imagen y texto en fila */
+  align-items: flex-start;   /* alinea arriba */
+  gap:2px;                 /* espacio entre imagen y texto */
+
   font-size: 20px;
   line-height: 1.8;
   
@@ -26,10 +30,21 @@
   border-radius: 10px;
   border: 3.5px dashed #d8f404;
   box-shadow: 0 0 20px rgba(149, 3, 3, 0.4);
+  flex-wrap: wrap; /* permite que salte de fila si no cabe */
 }
+
+      /* Imagen */
+    .imagen-valores {
+      width: 350px;        /* ajusta el tamaño */
+      
+      flex-shrink: 0;      /* evita que se encoja */
+    }
+
 .parrafo-nuestrosvalores ul {
   list-style: none; /* quita las viñetas por defecto */
   padding-left: 0;
+  margin: 0;
+  flex: 1;             /* ocupa el resto del espacio */
 }
 
 .parrafo-nuestrosvalores li {
@@ -45,6 +60,21 @@
   color: #d8f404;
   font-weight: bold;
 }
+        /* 📱 Versión móvil */
+    @media (max-width: 768px) {
+      .parrafo-nuestrosvalores {
+        flex-direction: column;   /* imagen arriba y texto abajo */
+        text-align: center;       /* centra el contenido */
+      }
+
+      .parrafo-nuestrosvalores ul {
+        text-align: justify;      /* vuelve a justificar solo el texto */
+      }
+
+      .imagen-valores {
+        margin: 0 auto 2px;      /* centra la imagen */
+      }
+    }
 .container.marketing h2{
   font-family: "Caveat Brush", cursive;
   font-weight: 400; /* controla el grosor de la letra */
@@ -52,4 +82,5 @@
   font-size: 45px;
   color: rgb(49, 82, 128);
 }
+       
 

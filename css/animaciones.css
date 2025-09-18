@@ -1,0 +1,8 @@
+.animar-scroll {
+          opacity: 0;
+          transition: opacity 0.3s ease-in-out;
+        }
+
+        .animar-scroll.visible {
+          opacity: 1;
+        }
