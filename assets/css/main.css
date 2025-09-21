@@ -37,7 +37,8 @@ background-color: #ffffff;
 
 
 header {
-  background-color: #f7ffff;
+  /* background-color: #f7ffff; */
+  background-color: #4dbbbb;
 }
 main {
   flex: 1; /* ocupa el espacio sobrante */
@@ -70,8 +71,9 @@ main {
 .menu {
   list-style: none;
   display: flex;
-  gap: 15px;
+  gap: 25px;
   position: relative;
+  
 }
 
 .menu li {
@@ -80,11 +82,12 @@ main {
 
 .menu li a {
   text-decoration: none;
-  color: rgb(0, 0, 0);
+  /* color: rgb(0, 0, 0); */
+  color: white;
   font-weight: 500;
   padding: 8px 12px;
   display: block;
-  font-size: 18px;
+  font-size: 20px;
   
 }
 /* Submenús (desktop) */
@@ -102,7 +105,7 @@ main {
 }
 
 .submenu li a {
-  padding: 10px;
+  padding: 5px;
   color: white;
 }
 
@@ -110,7 +113,7 @@ main {
 @media (min-width: 769px) {
   /* Hover del menú principal */
     .menu > li > a:hover {
-      background: rgb(196, 146, 110);
+      background: #5a9494;
       border-radius: 5px;
     }
 
@@ -180,7 +183,8 @@ main {
 
 
 .footer-custom {
-  background-color: #898A8E; /* fondo gris oscuro */
+  /* background-color: #898A8E; */
+  background-color: #4dbbbb;
   color: white; /* texto en blanco */
   
   margin-top: auto;
@@ -194,13 +198,13 @@ main {
 }
 
 .footer-custom a:hover {
-  color: #2f3ce9; /* enlaces más brillantes al pasar el mouse */
+  color: #ffffff; /* enlaces más brillantes al pasar el mouse */
 }
 .footer-custom h5 {
-  color: #000000;
+  color: #ffffff;
   text-decoration: none;
   font-size: 1.2rem;
-  border-bottom: #1b1c30 solid 2px;
+  border-bottom: #ffffff solid 2px;
 }
 .feature {
    display: flex;             /* coloca imagen y texto en fila */
@@ -209,10 +213,53 @@ main {
 .feature i {
   font-size: 1.75rem;
   padding-top: 0.25rem;
-  margin-right: 1rem;
-  color: #212529;
+  margin-right: 1rem; 
 }
-.nav li a {
-  color: #212529;
-  
+
+
+
+.whatsapp-float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25D366; /* verde oficial WhatsApp */
+  color: white;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+  z-index: 1000;
+  animation: pulse 1.5s infinite; /* animación */
 }
+
+.whatsapp-float i {
+  line-height: 60px;
+}
+
+/* Animación pulse */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
+  }
+  70% {
+    transform: scale(1.1);
+    box-shadow: 0 0 0 15px rgba(37, 211, 102, 0);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+  }
+}
+
+.bi-facebook {
+  color: #ffffff; /* azul Facebook */
+}
+.bi-instagram {
+  color: #ffffff; /* rosa Instagram */
+}
+.bi-tiktok {
+  color: #ffffff;  
+ }

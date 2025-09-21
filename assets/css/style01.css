@@ -6,15 +6,15 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  min-height: 650px;
-  color: white;
+  min-height: 700px;
+  color: #4dbbbb;
   z-index: 1;
   /* border-bottom-left-radius: 700px; */
   clip-path: ellipse(100% 90% at 50% 0%);
 }
 /* overlay!! opacidad detras del texto*/
-.bg-fonema .col-lg-6 {
-  background-color: rgba(0, 0, 0, 0.301); /* negro con opacidad */
+.bg-fonema .col-lg-5 {
+  background-color: #364d4d50; /*opacidad */
   padding: 5px;
   border-radius: 20px; /* opcional, para bordes redondeados */
   
@@ -23,16 +23,27 @@
 .bg-fonema h1 {
   font-size: 3rem;   /* 48px */
   font-weight: 700;
+  padding-top: 10px;
+  font-family: "DM Serif Text", serif;
+  font-style: normal;
+  
 }
 
 .bg-fonema p.lead {
   font-size: 1.5rem; /* 24px */
   line-height: 1.6;
+  color: #ffffff;
+  font-weight: 500;
+  padding: 20px 30px;
+  text-align: justify;
+  ;
+
+  
 }
-.bg-fonema h1 {
-  font-family: "Caveat Brush", cursive;
-  font-size: 4.5rem;
-}
+.bg-fonema .titulo {
+    color: aqua;
+    
+  }
 
 
 
@@ -207,7 +218,7 @@
   font-family: "Caveat Brush", cursive;
   font-weight: 400;
   font-style: normal;
-  color: rgb(49, 82, 128);
+  color:aqua;
 }
 #myCarousel p {
     
