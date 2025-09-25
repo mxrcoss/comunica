@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 
-    font-family: "Handlee", cursive;
+    font-family:Helvetica neue;
     font-weight: 400;
     font-style: normal;
 }
@@ -15,11 +15,7 @@ background-color: #ffffff;
   flex-direction: column;
 }
 
-/* img{
-    max-width: 100%;
-    
-    display: block;
-}  */
+
 
     .titulo-inicio{
     padding: 0;
@@ -37,8 +33,7 @@ background-color: #ffffff;
 
 
 header {
-  /* background-color: #f7ffff; */
-  background-color: #4dbbbb;
+  background-color: #a491cc;
 }
 main {
   flex: 1; /* ocupa el espacio sobrante */
@@ -71,7 +66,7 @@ main {
 .menu {
   list-style: none;
   display: flex;
-  gap: 25px;
+  gap: 2px;
   position: relative;
   
 }
@@ -113,7 +108,7 @@ main {
 @media (min-width: 769px) {
   /* Hover del menú principal */
     .menu > li > a:hover {
-      background: #5a9494;
+      background: #5795f2ab;
       border-radius: 5px;
     }
 
@@ -184,7 +179,7 @@ main {
 
 .footer-custom {
   /* background-color: #898A8E; */
-  background-color: #4dbbbb;
+  background-color: #a491cc;
   color: white; /* texto en blanco */
   
   margin-top: auto;
