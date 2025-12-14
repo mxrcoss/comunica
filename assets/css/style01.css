@@ -67,7 +67,7 @@
 .col img {
     border-radius: 20px;
     /* border: 4px solid rgba(38, 8, 126, 0.3); */
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 8px rgba(199, 29, 29, 0.1);
     width: 100%;
     height: auto;
     max-height: 300px;
@@ -77,6 +77,7 @@
 
 .parrafo-para-empezar {
   text-align: justify;
+  margin-top: 3rem;
   padding: 15px;
   border-radius: 10px;
   /* background-color: rgba(191, 236, 218, 0.705); */
@@ -84,26 +85,27 @@
 }
 
       /*inicio nuestros servicios DENTRO DE PARA EMPEZAR */
-.parrafo-nuestrosservicios {
+.parrafo-nuestrosvalores {
   
   text-align: justify;
+  margin-top: 3rem;
   padding: 15px;
   border-radius: 10px;
   /* background-color: rgba(240, 239, 239, 0.705); */
   box-shadow:7px 0 10px rgba(14, 191, 204, 0.4);
 }
-.parrafo-nuestrosservicios ul {
+.parrafo-nuestrosvalores ul {
   list-style: none; /* quita las viñetas por defecto */
   padding-left: 0;
 }
 
-.parrafo-nuestrosservicios li {
-  margin-bottom: 15px;
+.parrafo-nuestrosvalores li {
+  margin-bottom: 2rem;
   padding-left: 28px;
   position: relative;
 }
 
-.parrafo-nuestrosservicios li::before {
+.parrafo-nuestrosvalores li::before {
   content: "🧩"; /* también puedes usar un emoji o un ícono con font-awesome */
   position: absolute;
   left: 0;
@@ -142,7 +144,13 @@
 .carousel-caption {
     background-color: rgba(0, 0, 0, 0.438); /* Fondo blanco con opacidad */
     padding: 10px;
+    margin-bottom: 6rem;
     border-radius: 10px;
+    
+}
+.separacion-seccion {
+padding: 3rem 3rem;
+border-top: #979494 1px solid;
 }
 
 
