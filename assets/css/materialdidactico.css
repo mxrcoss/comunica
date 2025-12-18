@@ -47,3 +47,12 @@
     font-weight: bold;
     color: #e09b00;
 }
+
+#modalBeneficios li {
+    margin-bottom: 6px;
+    font-size: 0.95rem;
+}
+
+#modalAdvertencia {
+    font-style: italic;
+}
