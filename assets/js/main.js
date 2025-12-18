@@ -68,34 +68,60 @@ const productos = [
               "Ayuda a fortalecer la motricidad fina, la coordinación mano-ojo y el reconocimiento de colores y texturas. "+
               "Fabricado con materiales seguros y resistentes, ideal para el uso diario en casa o en terapia.",
     edad: "1 a 4 años",
-    
+    beneficios: [
+        "Estimula los sentidos",
+        "Mejora la motricidad fina",
+        "Favorece la coordinación mano-ojo",
+        "Desarrolla el aprendizaje temprano"
+    ],
+    material: "Plástico ABS no tóxico",
+    advertencia: "Usar bajo la supervisión de un adulto.",
     precio: 60,
     descuento: 45,
     categoria: "sensorial",
     imagen: "../assets/img/juguete1.jpg",
     etiqueta: "Nuevo"
 }
+
 ,
     {
         id: 2,
         nombre: "Bloques Didácticos",
-        descripcion: "Estimula la lógica y coordinación.",
+        descripcion: "Bloques de encaje educativo.",
+        detalle: "Favorecen la creatividad, el pensamiento lógico y el reconocimiento de formas y colores.",
+        edad: "2 a 5 años",
+        beneficios: [
+            "Desarrolla creatividad",
+            "Estimula pensamiento lógico",
+            "Mejora coordinación"
+        ],
+        material: "Madera ecológica",
+        advertencia: "No apto para menores de 2 años.",
         precio: 80,
-        descuento: 60,
-        categoria: "logica",
-        imagen: "../assets/img/juguete2.jpg",
-        etiqueta: "Oferta"
+        imagen: "../assets/img/juguete2.jpg"
     },
     {
-        id: 3,
-        nombre: "Pelota Sensorial",
-        descripcion: "Mejora la motricidad fina.",
-        precio: 50,
-        descuento: null,
-        categoria: "motricidad",
-        imagen: "../assets/img/juguete3.jpg",
-        etiqueta: null
-    }
+    id: 3,
+    nombre: "Chanchito Feliz",
+    descripcion: "Juguete sensorial para estimulación temprana.",
+    detalle: "El Chanchito Feliz es un juguete didáctico diseñado para estimular el desarrollo sensorial en niños pequeños."+ 
+              "Ayuda a fortalecer la motricidad fina, la coordinación mano-ojo y el reconocimiento de colores y texturas. "+
+              "Fabricado con materiales seguros y resistentes, ideal para el uso diario en casa o en terapia.",
+    edad: "1 a 4 años",
+    beneficios: [
+        "Estimula los sentidos",
+        "Mejora la motricidad fina",
+        "Favorece la coordinación mano-ojo",
+        "Desarrolla el aprendizaje temprano"
+    ],
+    material: "Plástico ABS no tóxico",
+    advertencia: "Usar bajo la supervisión de un adulto.",
+    precio: 60,
+    descuento: 45,
+    categoria: "sensorial",
+    imagen: "../assets/img/juguete1.jpg",
+    etiqueta: "Nuevo"
+}
 ];
 //-----------------Render automático de productos-----------------
 const contenedor = document.getElementById("contenedor-productos");
@@ -156,13 +182,32 @@ function abrirModal(id) {
     document.getElementById("modalDescripcion").textContent = prod.descripcion;
     document.getElementById("modalDetalle").textContent = prod.detalle;
     document.getElementById("modalEdad").textContent = prod.edad;
+    document.getElementById("modalMaterial").textContent = prod.material;
+    document.getElementById("modalAdvertencia").textContent = prod.advertencia;
+
+    // Beneficios
+    const lista = document.getElementById("modalBeneficios");
+    lista.innerHTML = "";
+    prod.beneficios.forEach(b => {
+        lista.innerHTML += `
+            <li>
+                <i class="bi bi-check-circle-fill text-success me-2"></i>${b}
+            </li>`;
+    });
+
+    // Precio
     document.getElementById("modalPrecio").textContent =
         `S/ ${(prod.descuento ?? prod.precio)}.00`;
+
+    // Botón comprar
+    document.getElementById("modalComprar").href =
+        `https://wa.me/51963917074?text=Hola,%20quiero%20comprar%20${encodeURIComponent(prod.nombre)}`;
 
     bootstrap.Modal
         .getOrCreateInstance(document.getElementById("modalProducto"))
         .show();
 }
+
 
 
 //-----------------fín del modal de productos-----------------
