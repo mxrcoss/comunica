@@ -16,11 +16,7 @@
     border-top-right-radius: 12px;
 }
 
-.precio {
-    font-size: 1.25rem;
-    font-weight: bold;
-    color: #e09b00;
-}
+
 .badge {
     font-size: 0.8rem;
     border-radius: 8px;
@@ -28,4 +24,26 @@
 
 .card-footer .btn {
     font-size: 0.9rem;
+}
+
+/* Estilos adicionales  */
+.fade-in {
+    animation: fade 0.4s ease;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.precio {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #e09b00;
 }
