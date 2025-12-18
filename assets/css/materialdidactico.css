@@ -1,0 +1,31 @@
+/* Cards de productos */
+.producto-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 12px;
+}
+
+.producto-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.producto-card img {
+    height: 220px;
+    object-fit: cover;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+.precio {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #e09b00;
+}
+.badge {
+    font-size: 0.8rem;
+    border-radius: 8px;
+}
+
+.card-footer .btn {
+    font-size: 0.9rem;
+}

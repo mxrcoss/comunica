@@ -20,13 +20,62 @@
 
 
     <link rel="stylesheet" href="../assets/css/main.css">
-    <link rel="stylesheet" href="../assets/css/style01.css">
+    <link rel="stylesheet" href="../assets/css/materialdidactico.css">
 
 <!-- animate.css -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 <link rel="stylesheet" href="../assets/css/animate.css">
 
 </head>
+        <div class="modal fade" id="modalChanchito" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+
+                    <div class="modal-header">
+                        <h5 class="modal-title">Chanchito Feliz</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+
+                    <div class="modal-body">
+                        <div class="row g-4">
+                            <div class="col-md-6">
+                                <img src="../assets/img/juguete1.jpg"
+                                        class="img-fluid rounded"
+                                        alt="Chanchito Feliz">
+                            </div>
+
+                            <div class="col-md-6">
+                                <p>
+                                    Juguete didáctico diseñado para estimular los sentidos,
+                                    mejorar la motricidad fina y fomentar el aprendizaje temprano.
+                                </p>
+
+                                <ul>
+                                    <li>Edad recomendada: 1 a 4 años</li>
+                                    <li>Material seguro y lavable</li>
+                                    <li>Estimulación sensorial</li>
+                                </ul>
+
+                                <p class="precio">S/ 45.00</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal-footer">
+                        <a href="https://wa.me/51963917074?text=Hola,%20quiero%20comprar%20el%20Chanchito%20Feliz"
+                            target="_blank"
+                            class="btn btn-warning">
+                            Comprar por WhatsApp
+                        </a>
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                            Cerrar
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
 <body>
 
     <header>
@@ -78,7 +127,87 @@
 
         
     </header>
-    <h1>chanchito felíz</h1>
+    <main class="container my-5">
+
+            <!-- Título de la sección -->
+            <div class="text-center mb-5">
+                <h1 class="fw-bold">Material Didáctico</h1>
+                <p class="text-muted">Juguetes educativos para el desarrollo infantil</p>
+            </div>
+
+            <div class="text-center mb-4">
+                <button class="btn btn-outline-primary me-2" onclick="filtrar('todos')">Todos</button>
+                <button class="btn btn-outline-primary me-2" onclick="filtrar('sensorial')">Sensoriales</button>
+                <button class="btn btn-outline-primary" onclick="filtrar('logica')">Lógica</button>
+            </div>
+
+
+            <!-- Grid de productos -->
+            <div class="row g-4">
+
+                <!-- Producto 1 -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 producto" data-categoria="sensorial">
+                    <div class="card h-100 producto-card position-relative">
+                        <!-- Etiqueta -->
+                        <span class="badge bg-success position-absolute top-0 start-0 m-2">
+                            Nuevo
+                        </span>
+                        <img src="../assets/img/juguete1.jpg" class="card-img-top" alt="Chanchito Feliz">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Chanchito Feliz</h5>
+                            <p class="card-text text-muted small">
+                                Juguete sensorial para estimulación temprana.
+                            </p>
+                            <p class="precio">S/ 45.00</p>
+                        </div>
+                        <div class="card-footer bg-white border-0 text-center d-grid gap-2">
+                            <button class="btn btn-outline-secondary"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#modalChanchito">
+                                Ver detalles
+                            </button>
+                            <a href="https://wa.me/51963917074?text=Hola,%20quiero%20comprar%20el%20Chanchito%20Feliz"
+                            target="_blank"
+                            class="btn btn-warning w-100">
+                                Comprar
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Producto 2 -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 producto" data-categoria="logica">
+                    <div class="card h-100 producto-card position-relative">
+                        <!-- Etiqueta nuevo -->
+                        <span class="badge bg-success position-absolute top-0 start-0 m-2">
+                            Nuevo
+                        </span>
+                        <img src="../assets/img/juguete2.jpg" class="card-img-top" alt="Bloques Didácticos">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Bloques Didácticos</h5>
+                            <p class="card-text text-muted small">
+                                Mejora la coordinación y la lógica.
+                            </p>
+                            <p class="precio">S/ 60.00</p>
+                        </div>
+                        <div class="card-footer bg-white border-0 text-center d-grid gap-2">
+                            <button class="btn btn-outline-secondary"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#modalChanchito">
+                                Ver detalles
+                            </button>
+                            <a href="https://wa.me/51963917074?text=Hola,%20quiero%20comprar%20Bloques%20Didácticos"
+                            target="_blank"
+                            class="btn btn-warning w-100">
+                                Comprar
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                
+            </div>
+    </main>
     
 
     <!-- inicio footer -->

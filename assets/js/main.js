@@ -45,3 +45,16 @@
 
             elementos.forEach((el) => observador.observe(el)); //Activa el observador para todos los elementos .animar-scroll.
           });
+
+    // Filtrado de productos en material didáctico
+    function filtrar(categoria) {
+    const productos = document.querySelectorAll('.producto');
+
+    productos.forEach(producto => {
+        if (categoria === 'todos' || producto.dataset.categoria === categoria) {
+            producto.style.display = 'block';
+        } else {
+            producto.style.display = 'none';
+        }
+    });
+}
