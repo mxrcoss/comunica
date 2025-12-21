@@ -148,6 +148,129 @@
     border-radius: 10px;
     
 }
+/* sobre nosotros */
+
+/* CONTENEDOR GENERAL */
+.sobre-nosotros-wrapper {
+    background-color: #d9ccf484;
+    padding-bottom: 4rem;
+}
+
+/* BLOQUE SUPERIOR */
+.bloque-texto {
+    background-color: #a491cc;
+    color: #fff;
+    padding: 4rem;
+}
+
+.bloque-texto h2 span {
+    font-family: 'Caveat Brush', cursive;
+    font-size: 4rem;
+}
+
+.bloque-texto p {
+    max-width: 500px;
+    line-height: 1.7;
+    font-size: 1.25rem;
+}
+
+.bloque-imagen {
+    background-color: #d9ccf484;
+    padding: 4rem;
+}
+
+/* FRASE CENTRAL */
+/* FRASE FLOTANTE */
+.frase-flotante {
+    position: relative;
+    z-index: 10;
+    text-align: center;
+    margin-top: -40px;   /* SUBE la frase */
+    margin-bottom: 40px;
+}
+
+.frase-flotante span {
+    display: inline-block;
+    background-color: #d9ccf4;
+    border: 2px solid #a491cc;
+    padding: 18px 40px;
+    font-family: 'Caveat Brush', cursive;
+    font-size: 3rem;
+    color: #a491cc;
+    border-radius: 0.5rem;
+}
+
+
+/* IMAGEN CENTRAL */
+.imagen-central {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.imagen-central img {
+    max-width: 700px;
+}
+
+/* BLOQUE INFERIOR */
+.bloque-inferior {
+    background-color: #d9ccf484;
+    padding: 3rem;
+    border-radius: 10px;
+}
+
+.bloque-inferior h3 {
+    font-weight: bold;
+    font-size: 2.5rem;
+    line-height: 1.2;
+}
+
+/* LISTA DE VALORES */
+.lista-valores {
+    list-style: none;
+    padding: 0;
+}
+
+.lista-valores li {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.lista-valores i {
+    font-size: 3rem;
+    color: #b67a73;
+}
+.lista-valores strong {
+    font-size: 1.3rem;
+    font-weight: 600;
+    display: block; /* Para que quede encima del párrafo */
+}
+.lista-valores p {
+  font-size: 1.25rem;
+  margin: 0;
+  line-height: 1.6;
+}
+    @media (max-width: 768px) {
+      .bloque-inferior h3 {
+        font-size: 2rem;
+        text-align: center;
+      }
+
+      .lista-valores strong {
+        font-size: 1.2rem;
+      }
+
+      .lista-valores p {
+        font-size: 1rem;
+      }
+    }
+
+
+
+/* fin sobrenosotros */
+
+
+
 .separacion-seccion {
 padding: 3rem 3rem;
 border-top: #979494 1px solid;

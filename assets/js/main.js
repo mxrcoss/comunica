@@ -105,8 +105,8 @@ const productos = [
     nombre: "Chanchito Feliz",
     descripcion: "Juguete sensorial para estimulación temprana.",
     detalle: "El Chanchito Feliz es un juguete didáctico diseñado para estimular el desarrollo sensorial en niños pequeños."+ 
-              "Ayuda a fortalecer la motricidad fina, la coordinación mano-ojo y el reconocimiento de colores y texturas. "+
-              "Fabricado con materiales seguros y resistentes, ideal para el uso diario en casa o en terapia.",
+                "Ayuda a fortalecer la motricidad fina, la coordinación mano-ojo y el reconocimiento de colores y texturas. "+
+                "Fabricado con materiales seguros y resistentes, ideal para el uso diario en casa o en terapia.",
     edad: "1 a 4 años",
     beneficios: [
         "Estimula los sentidos",

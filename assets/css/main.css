@@ -42,24 +42,29 @@ main {
 /* Navbar */
 .navbar {
   display: flex;
+  /* justify-content: space-around; */
   justify-content: space-around;
   align-items: center;
-  padding: 10px 20px;
+  padding: 0 20px;
 }
 
 /* Logo */
 .logo {
   display: flex;
+  background-color: #ffffff;
   align-items: center;
   font-weight: bold;
-  color: white;
+  
   font-size: 18px;
 }
 
 .logo img {
   width: 300px;
-  height: 100px;
-  margin-right: 10px;
+  /* height: 100px; */
+  max-height: 100px;
+  height: auto;
+  display: block;
+  /* margin-right: 10px;s */
 }
 
 /* Menú (desktop) */
