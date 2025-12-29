@@ -62,24 +62,24 @@
 const productos = [
     {
     id: 1,
-    nombre: "Chanchito Feliz",
-    descripcion: "Juguete sensorial para estimulación temprana.",
-    detalle: "El Chanchito Feliz es un juguete didáctico diseñado para estimular el desarrollo sensorial en niños pequeños."+ 
-              "Ayuda a fortalecer la motricidad fina, la coordinación mano-ojo y el reconocimiento de colores y texturas. "+
-              "Fabricado con materiales seguros y resistentes, ideal para el uso diario en casa o en terapia.",
-    edad: "1 a 4 años",
+    nombre: "Rompecabeza 3d Baby",
+    imagen: "../assets/img/juguete01.jpeg",
+    descripcion: "Rompecabeza de madera con 5 piezas de animales de granja o marinos",
+    detalle: "Consiste en identificar la figura geométrica al igual que sus animalitos ideal para niños"+ 
+              "de 2 años a más, un rompecabeza con base geométrica y un tablero para el encaje. ",
+    edad: "2 años a más",
     beneficios: [
         "Estimula los sentidos",
         "Mejora la motricidad fina",
         "Favorece la coordinación mano-ojo",
         "Desarrolla el aprendizaje temprano"
     ],
-    material: "Plástico ABS no tóxico",
+    material: "madera no tóxico",
     advertencia: "Usar bajo la supervisión de un adulto.",
     precio: 60,
     descuento: 45,
     categoria: "sensorial",
-    imagen: "../assets/img/juguete1.jpg",
+    
     etiqueta: "Nuevo"
 }
 
