@@ -178,6 +178,12 @@
     background-color: #d9ccf484;
     padding: 4rem;
 }
+.bloque-imagen img {
+    width: 100%;
+    max-width: 400px;
+    height: 580px;
+    object-fit: cover;   /* recorta sin deformar */
+}
 
 /* FRASE CENTRAL */
 /* FRASE FLOTANTE */
@@ -208,7 +214,10 @@
 }
 
 .imagen-central img {
-    max-width: 700px;
+    width: 100%;
+    max-width: 983px;
+    height: 549px;
+    object-fit: cover;   /* recorta sin deformar */
 }
 
 /* BLOQUE INFERIOR */
@@ -216,6 +225,7 @@
     background-color: #d9ccf484;
     padding: 3rem;
     border-radius: 10px;
+    margin-top: 50px;
 }
 
 .bloque-inferior h3 {
@@ -264,6 +274,10 @@
         font-size: 1rem;
       }
     }
+.texto-valor {
+    display: flex;
+    flex-direction: column;
+}
 
 
 
