@@ -1,0 +1,246 @@
+/* ======================================================
+   TERAPIA DE LENGUAJE – IDENTIDAD PROPIA
+   ====================================================== */
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* HERO */
+.lenguaje-hero {
+    background: linear-gradient(135deg, #e9f2ff, #f8fbff);
+    padding: 5.5rem 0;
+}
+
+.lenguaje-badge {
+    display: inline-block;
+    background-color: #dbe9ff;
+    color: #1e5bb8;
+    padding: 0.4rem 1.2rem;
+    border-radius: 20px;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.lenguaje-hero h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+.lenguaje-hero p {
+    max-width: 720px;
+    font-size: 1.15rem;
+    color: #555;
+}
+
+/* ÁREAS */
+.lenguaje-areas {
+    padding: 5rem 0;
+    background-color: #ffffff;
+}
+
+.lenguaje-areas h2 {
+    font-size: 2.6rem;
+    font-weight: 700;
+}
+
+.lenguaje-areas .intro {
+    max-width: 650px;
+    margin: 1rem auto 0;
+    color: #666;
+}
+
+.area-card {
+    background-color: #f6f9ff;
+    padding: 2.2rem 2rem;
+    border-radius: 1.2rem;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.area-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 28px rgba(0,0,0,0.12);
+}
+
+.area-card i {
+    font-size: 2.6rem;
+    color: #1e5bb8;
+    margin-bottom: 1rem;
+}
+
+.area-card h5 {
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+/* PROCESO */
+.lenguaje-proceso {
+    background-color: #eef4ff;
+    padding: 5rem 0;
+}
+
+.lenguaje-proceso h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.proceso-lista {
+    margin-top: 1.5rem;
+    padding-left: 1.2rem;
+}
+
+.proceso-lista li {
+    margin-bottom: 0.8rem;
+    font-size: 1.05rem;
+}
+
+/* CTA */
+.lenguaje-cta {
+    background-color: rgba(164, 145, 204, 1);
+    color: #ffffff;
+    padding: 4.8rem 0;
+}
+
+.lenguaje-cta h2 {
+    font-size: 2.6rem;
+    font-weight: 700;
+}
+
+.lenguaje-cta p {
+    max-width: 700px;
+    font-size: 1.1rem;
+    margin-top: 1rem;
+}
+
+.lenguaje-cta .btn {
+    font-weight: 600;
+    border-radius: 30px;
+    padding: 0.8rem 2.4rem;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+
+    .lenguaje-hero h1 {
+        font-size: 2.2rem;
+    }
+
+    .lenguaje-proceso {
+        text-align: center;
+    }
+
+    .proceso-lista {
+        text-align: left;
+        display: inline-block;
+    }
+}
+
+/* ======================================================
+   DIRIGIDO
+   ====================================================== */
+
+.lenguaje-dirigido {
+    padding: 5rem 0;
+    background-color: #ffffff;
+}
+
+.lenguaje-dirigido h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.lenguaje-dirigido .intro {
+    max-width: 650px;
+    margin: 1rem auto 0;
+    color: #666;
+}
+
+.dirigido-card {
+    background-color: #f6f9ff;
+    padding: 2rem 1.8rem;
+    border-radius: 1.2rem;
+    text-align: center;
+    height: 100%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.dirigido-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 28px rgba(0,0,0,0.12);
+}
+
+.dirigido-card i {
+    font-size: 2.4rem;
+    color: #1e5bb8;
+    margin-bottom: 1rem;
+}
+
+
+/* ======================================================
+   ALERTAS
+   ====================================================== */
+
+.lenguaje-alertas {
+    padding: 5rem 0;
+    background-color: #eef4ff;
+}
+
+.alerta-lista {
+    list-style: none;
+    padding: 0;
+    margin-top: 1.5rem;
+}
+
+.alerta-lista li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.8rem;
+    font-size: 1.05rem;
+}
+
+.alerta-lista i {
+    color: #c0392b;
+    margin-right: 0.6rem;
+}
+
+
+/* ======================================================
+   BENEFICIOS
+   ====================================================== */
+
+.lenguaje-beneficios {
+    padding: 5rem 0;
+    background-color: #ffffff;
+}
+
+.beneficio-card {
+    background-color: #f6f9ff;
+    padding: 2.3rem 2rem;
+    border-radius: 1.2rem;
+    text-align: center;
+    height: 100%;
+}
+
+.beneficio-card i {
+    font-size: 2.6rem;
+    color: #1e5bb8;
+    margin-bottom: 1rem;
+}
+
+
+/* ======================================================
+   CTA SECUNDARIO
+   ====================================================== */
+
+.lenguaje-cta-secundario {
+    background-color: rgba(30, 91, 184, 0.1);
+    padding: 4rem 0;
+}
+
+.lenguaje-cta-secundario h3 {
+    font-size: 2rem;
+    font-weight: 700;
+}

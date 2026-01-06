@@ -1,0 +1,144 @@
+/* =====================================================
+   TERAPIA CONDUCTUAL – ESTILOS ESPECÍFICOS
+   Compatible con main.css
+   ===================================================== */
+
+/* ---------- HERO ---------- */
+.terapia-hero {
+    background-color: #d9ccf484;
+    padding: 4rem 0;
+}
+
+.terapia-hero h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #3e3e3e;
+}
+
+.terapia-hero p {
+    font-size: 1.25rem;
+    line-height: 1.7;
+    max-width: 600px;
+}
+
+/* Imagen hero */
+.terapia-hero img {
+    max-height: 450px;
+    object-fit: cover;
+    border-radius: 1rem;
+}
+
+
+/* ---------- SECCIÓN OBJETIVOS ---------- */
+.terapia-objetivos h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 3rem;
+}
+
+.objetivo-card {
+    background-color: #ffffff;
+    border-radius: 1rem;
+    padding: 2rem;
+    height: 100%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.objetivo-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+}
+
+.objetivo-card i {
+    font-size: 3rem;
+    color: #a491cc;
+    margin-bottom: 1rem;
+}
+
+.objetivo-card h5 {
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+}
+
+.objetivo-card p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+
+/* ---------- METODOLOGÍA ---------- */
+.terapia-metodologia {
+    background-color: #a491cc;
+    color: #ffffff;
+    padding: 4rem 0;
+}
+
+.terapia-metodologia h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+.terapia-metodologia ul {
+    padding-left: 1.2rem;
+}
+
+.terapia-metodologia li {
+    font-size: 1.2rem;
+    margin-bottom: 0.75rem;
+}
+
+.terapia-metodologia img {
+    max-height: 420px;
+    object-fit: cover;
+    border-radius: 1rem;
+}
+
+
+/* ---------- CTA ---------- */
+.terapia-cta {
+    padding: 4rem 1rem;
+    text-align: center;
+}
+
+.terapia-cta h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+.terapia-cta p {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+}
+
+.terapia-cta a.btn {
+    font-size: 1.25rem;
+    padding: 0.75rem 2.5rem;
+}
+
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 768px) {
+
+    .terapia-hero h1 {
+        font-size: 2.2rem;
+        text-align: center;
+    }
+
+    .terapia-hero p {
+        text-align: center;
+        margin: 0 auto 2rem;
+    }
+
+    .terapia-metodologia h2,
+    .terapia-objetivos h2,
+    .terapia-cta h2 {
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    .terapia-metodologia ul {
+        padding-left: 1rem;
+    }
+}

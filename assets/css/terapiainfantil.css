@@ -1,0 +1,174 @@
+/* =====================================================
+   TERAPIA INFANTIL – ESTILOS ESPECÍFICOS
+   Compatible con main.css
+   ===================================================== */
+
+/* ---------- HERO ---------- */
+.terapia-hero {
+    position: relative;
+    padding: 5rem 0;
+    overflow: hidden;
+}
+
+/* Imagen de fondo opaca */
+.terapia-hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url("../img/terapiainfantil02.png");
+    background-size: cover;
+    background-position: center;
+    opacity: 0.35; /* controla la opacidad */
+    z-index: 1;
+}
+
+/* Contenido encima de la imagen */
+.terapia-hero .container {
+    position: relative;
+    z-index: 2;
+}
+
+
+.terapia-hero h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #4a4a4a;
+}
+
+.terapia-hero p {
+    font-size: 1.25rem;
+    line-height: 1.7;
+    max-width: 620px;
+    color: #5a5a5a;
+}
+
+.terapia-hero img {
+    max-height: 450px;
+    object-fit: cover;
+    border-radius: 1.5rem;
+}
+
+
+/* ---------- OBJETIVOS ---------- */
+.terapia-objetivos h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #4a4a4a;
+    margin-bottom: 3rem;
+}
+
+.objetivo-card {
+    background-color: #ffffff;
+    border-radius: 1.5rem;
+    padding: 2.2rem 2rem;
+    height: 100%;
+    border: 2px dashed #f4c2d7;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.objetivo-card:hover {
+    transform: translateY(-6px) rotate(-0.3deg);
+    box-shadow: 0 12px 28px rgba(0,0,0,0.12);
+}
+
+.objetivo-card i {
+    font-size: 3rem;
+    color: #f28bb8;
+    margin-bottom: 1rem;
+}
+
+.objetivo-card h5 {
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+    color: #4a4a4a;
+}
+
+.objetivo-card p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #5f5f5f;
+}
+
+
+/* ---------- METODOLOGÍA ---------- */
+.terapia-metodologia {
+    background-color: #a491cc;
+    color: #2f4f4f;
+    padding: 4rem 0;
+}
+
+.terapia-metodologia h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+.terapia-metodologia ul {
+    padding-left: 1.2rem;
+}
+
+.terapia-metodologia li {
+    font-size: 1.2rem;
+    margin-bottom: 0.8rem;
+}
+
+.terapia-metodologia img {
+    max-height: 420px;
+    object-fit: cover;
+    border-radius: 1.5rem;
+}
+
+
+/* ---------- CTA ---------- */
+.terapia-cta {
+    padding: 4.5rem 1rem;
+    text-align: center;
+    background-color: #fff6dc;
+    border-radius: 2rem;
+    margin-bottom: 3rem;
+}
+
+.terapia-cta h2 {
+    font-size: 2.6rem;
+    font-weight: 700;
+    color: #4a4a4a;
+    margin-bottom: 1.5rem;
+}
+
+.terapia-cta p {
+    font-size: 1.25rem;
+    color: #5a5a5a;
+    margin-bottom: 2.2rem;
+}
+
+.terapia-cta a.btn {
+    font-size: 1.3rem;
+    padding: 0.8rem 2.8rem;
+    border-radius: 50px;
+}
+
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 768px) {
+
+    .terapia-hero h1 {
+        font-size: 2.2rem;
+        text-align: center;
+    }
+
+    .terapia-hero p {
+        text-align: center;
+        margin: 0 auto 2rem;
+    }
+
+    .terapia-objetivos h2,
+    .terapia-metodologia h2,
+    .terapia-cta h2 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .terapia-metodologia ul {
+        padding-left: 1rem;
+    }
+}
